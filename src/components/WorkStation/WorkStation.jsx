@@ -21,7 +21,7 @@ export function WorkStation() {
             onClick={() => handleTabClick(1)}
             className={activeTab === 1 ? "active" : ""}
           >
-            Danney
+            UI/UX Design
             <a target="_blank" href="https://danneytrieu.design/">
               <MdOutlineOpenInNew />
             </a>
@@ -30,7 +30,7 @@ export function WorkStation() {
             onClick={() => handleTabClick(2)}
             className={activeTab === 2 ? "active" : ""}
           >
-            Sean
+            Development
             <a target="_blank" href="https://seantai.dev/">
               <MdOutlineOpenInNew />
             </a>
@@ -39,7 +39,7 @@ export function WorkStation() {
             onClick={() => handleTabClick(3)}
             className={activeTab === 3 ? "active" : ""}
           >
-            Jane
+            Interior Design
             <a target="_blank" href="https://jane-moroz-dev.netlify.app/">
               <MdOutlineOpenInNew />
             </a>
@@ -69,13 +69,13 @@ export function WorkStation() {
   const getIframeSource = () => {
     switch (activeTab) {
       case 1:
-        return "https://danneytrieu.design/";
+        return "https://palete.pro/design";
       case 2:
-        return "https://seantai.dev/";
+        return "https://palete.pro/development";
       case 3:
-        return "https://jane-moroz-dev.netlify.app/";
+        return "https://palete.pro/interiordesign";
       default:
-        return "https://danneytrieu.design/";
+        return "https://palete.pro/design";
     }
   };
 
@@ -85,7 +85,7 @@ export function WorkStation() {
   useEffect(() => {
     if (!theatreObject) return;
     const unsubscribe = theatreObject.onValuesChange((newValues) => {
-      if (newValues.foo > 0.79265 && newValues.foo < 0.865) {
+      if (newValues.foo > 0.4 && newValues.foo < 0.74) {
         setHtmlVisible(true);
       } else {
         setHtmlVisible(false);

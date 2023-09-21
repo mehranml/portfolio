@@ -2,14 +2,13 @@ import studio from "@theatre/studio";
 import extension from "@theatre/r3f/dist/extension";
 import { getProject } from "@theatre/core";
 
-import animationState from "./May03_TheatreState.json";
+import animationState from "./palete.json";
 
 export function initTheatreStudio() {
-  if (process.env.NODE_ENV === "development") {
+    if (import.meta.env.DEV) {
     studio.initialize();
     studio.extend(extension);
-    studio.ui.hide();
-  }
+}
 }
 
 export const campFireSheet = getProject("Chingu29", {

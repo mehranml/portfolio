@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { AudioLoader } from "three";
-import { PositionalAudio } from "@react-three/drei";
+import {CameraControls, PositionalAudio} from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { WorkStation } from "./components/WorkStation/WorkStation";
 import { CustomText3D } from "./components/CustomText3D/CustomText3D";
@@ -35,7 +35,6 @@ export function Experience({ ready, soundLevel }) {
         groundColor="#919191"
         intensity={0.15}
       />
-
       <PerspectiveCamera
         theatreKey="Camera"
         makeDefault
@@ -46,7 +45,7 @@ export function Experience({ ready, soundLevel }) {
 
       <e.group theatreKey="CameraTarget" ref={islandRef} position={[0, 0, 5]} />
 
-      <CustomText3D text="Voyage #43" />
+      <CustomText3D text="Palete" subtext={'Design Agency'} />
 
       <group position={[0, 0, 0]}>
         <RandomClouds amount={1} />

@@ -10,22 +10,10 @@ import TeamCarouselItem from "../TeamCarouselItem";
 import teamData from "./teamData";
 
 const TeamCarousel = () => {
-  const [active, setActive] = useState(0);
-
-  // Theatre.js
-  const obj = cameraMovementSheet.object("Team Carousel", {
-    teamMemberIndex: "0",
-  });
-
-  useEffect(() => {
-    return obj.onValuesChange((obj) => {
-      setActive(obj.teamMemberIndex);
-    });
-  }, [obj]);
 
   return (
     <motion.div className="carousel-wrapper">
-      <TeamCarouselItem key={`member-${active}`} member={teamData[active]} />
+      <TeamCarouselItem key={`member-0`} member={teamData[0]} />
     </motion.div>
   );
 };

@@ -79,17 +79,21 @@ canvas {
   border-top-left-radius: 0px;
   background-color: white;
 }
+
+.browser-tab{
+
+}
 .browser-tab > button {
-  width: 100px;
   height: 40px;
   border-right: 5px;
+  padding: 8px;
   background-color: white;
   cursor: pointer;
-  font-weight: 200;
-  font-size: 0.7rem;
+  font-weight:600;
+  font-size: 1.3rem;
 }
 .browser-tab > button.active {
-  background-color: rgb(233, 106, 106);
+  background-color: rgb(233, 129, 17);
   color: white;
 }
 .browser-tab > button > a {
@@ -187,9 +191,13 @@ a:hover {
   border-radius: 30px;
 }
 .board-list {
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style-type: none;
+}
+
+.board-list > li {
+  margin-bottom: 8px;
 }

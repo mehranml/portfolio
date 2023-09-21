@@ -16,21 +16,17 @@ function Board(props) {
           transform
           distanceFactor={0.1}
           position-x={-0.002}
-          position-y={0.01}
+          position-y={0.05}
           position-z={-0.028}
           rotation-y={Math.PI}
         >
           <div className="board">
-            <p className="board-title">Our Stacks:</p>
+            <p className="board-title">Our Services:</p>
             <ul className="board-list">
-              <li>React</li>
-              <li>React-fiber</li>
-              <li>Fiber-drei</li>
-              <li>Threatre</li>
-              <li>Framer-motion</li>
-              <li>Zustand</li>
-              <li>Leva</li>
-              <li>Vite</li>
+              <li>UI/UX Designs</li>
+              <li>3D Modeling</li>
+              <li>Software Development</li>
+              <li>Interior Design</li>
             </ul>
           </div>
         </Html>

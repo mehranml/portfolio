@@ -29,7 +29,7 @@ const SectionDetails = () => {
   const [sectionIsOpen, setSectionIsOpen] = useState(false);
 
   // Sequence stops: team1, team2, team3, team4, team5, campfire
-  const stops = [2.1, 3.1, 3.8, 4.7, 5.3, 6.1, 11];
+  const stops = [/*2.1, 3.1, 3.8, 4.7,*/ 2.38, 3.06, 6];
 
   // Instructions click handler
   const clickHandler = () => {
@@ -109,15 +109,7 @@ const SectionDetails = () => {
                   >
                     Next <HiOutlineArrowRight />
                   </button>
-                  <a
-                    onMouseEnter={() => updateCursorType("hover")}
-                    onMouseLeave={() => updateCursorType("pointer")}
-                    target="_blank"
-                    className="section-btn"
-                    href="https://github.com/chingu-voyages/v43-tier3-team-29"
-                  >
-                    github repo <HiOutlineArrowRight />
-                  </a>
+
                 </motion.div>
               </motion.div>
             );

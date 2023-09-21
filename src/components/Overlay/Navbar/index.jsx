@@ -16,11 +16,11 @@ import {
 
 // Nav list
 const navList = [
-  { title: "about", icon: <HiOutlineBookOpen />, position: 0.7 },
-  { title: "team", icon: <HiOutlineUsers />, position: 2.1 },
-  { title: "stack", icon: <HiOutlineChip />, position: 6.7 },
-  { title: "portfolio", icon: <HiOutlineDesktopComputer />, position: 7.8 },
-  { title: "credits", icon: <HiOutlineCollection />, position: 9 },
+  { title: "about", icon: <HiOutlineBookOpen />, position: 0.6 },
+  { title: "team", icon: <HiOutlineUsers />, position: 2.38 },
+  { title: "services", icon: <HiOutlineChip />, position: 3.6 },
+  { title: "portfolio", icon: <HiOutlineDesktopComputer />, position: 4.8 },
+  { title: "contact us", icon: <HiOutlineCollection />, position: 6 },
 ];
 
 // Mobile Nav

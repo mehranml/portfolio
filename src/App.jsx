@@ -35,26 +35,25 @@ export default function App({ ready }) {
   );
 
   const handleClick = () => {
-    // Sequence stops: team1, team2, team3, team4, team5, stack
-    const stops = [0.6, 2.1, 3.1, 3.8, 4.7, 5.3, 6.1, 6.7, 7.8, 9, 11];
+    // Sequence stops: team1, team2, team3, team4, team5, services
+    const stops = [0 , 0.6,/* 2.1, 3.1, 3.8, 4.7,*/ 2.38, 3.06, 3.65, 4.8, 6, 8];
 
     if (cursorType === "custom") {
       const nextStop = stops.find(
         (stop) => stop > cameraMovementSheet.sequence.position
       );
-
+        console.log(nextStop)
       if (nextStop < 2.1 || !nextStop) {
         updateActiveNav("about");
-      } else if (nextStop < 6.7) {
+      } else if (nextStop ===2.38) {
         updateActiveNav("team");
-      } else if (nextStop < 7.8) {
-        updateActiveNav("stack");
-      } else if (nextStop < 9) {
+      } else if (nextStop === 3.65) {
+        updateActiveNav("services");
+      } else if (nextStop === 4.8) {
         updateActiveNav("portfolio");
       } else {
-        updateActiveNav("credits");
+        updateActiveNav("contact us");
       }
-
       if (cameraMovementSheet.sequence.position < stops[stops.length - 1]) {
         cameraMovementSheet.sequence.play({
           range: [cameraMovementSheet.sequence.position, nextStop],

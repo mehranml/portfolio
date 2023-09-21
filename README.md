@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio Voyage #43</h1>
+<h1 align="center">Portfolio Palete</h1>
 <div align="center">
   <h3>
     <a href="https://portfolio3js.netlify.app/" color="white">

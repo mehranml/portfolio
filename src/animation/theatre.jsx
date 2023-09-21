@@ -8,6 +8,7 @@ export function initTheatreStudio() {
     if (import.meta.env.DEV) {
     studio.initialize();
     studio.extend(extension);
+    studio.ui.hide()
 }
 }
 
